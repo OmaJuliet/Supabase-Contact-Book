@@ -35,20 +35,16 @@ const Home = () => {
   }, []);
   return (
     <>
-      <section>
-        {fetchError && <p>{fetchError}</p>}
-        {contacts && (
-          <article>
-            {contacts.map((contact) => (
-              <ContactCard
-                key={contact.id}
-                contact={contact}
-                onDelete={handleDelete}
-              />
-            ))}
-          </article>
-        )}
-      </section>
+      <div className="container px-5 py-8 mx-auto">
+          {fetchError && <p>{fetchError}</p>}
+          {contacts && (
+            <div className="lg:grid lg:gap-4 lg:grid-cols-3 lg:grid-rows-3 grid -m-4 md:grid md:gap-3 md:grid-cols-2 md:grid-rows-2">
+              {contacts.map((contact) => (
+                <ContactCard key={contact.id} contact={contact} onDelete={handleDelete} />
+              ))}
+            </div>
+          )}
+        </div>
     </>
   );
 };
