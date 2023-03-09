@@ -41,6 +41,7 @@ const Update = () => {
       .eq("id", id);
     if (error) {
       setFormError("Please fill in all the fields.");
+      console.log(data)
     }
     navigate("/");
   };
