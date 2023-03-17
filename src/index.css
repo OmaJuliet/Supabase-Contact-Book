@@ -1,17 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
 
-:root {
-  --primary: #12bca2;
-  --secondary: #6d15df;
-}
-
 body {
   margin: 0;
   color: #333;
   font-family: 'Poppins';
   background: #f2f2f2;
 }
-
 
 form {
   background: #fff;
@@ -29,7 +23,7 @@ form input, form textarea {
   margin: 10px 0 20px 0;
 }
 form button {
-  background: var(--primary);
+  background: #12bca2;
   color: #fff;
   border: 0;
   border-radius: 6px;
