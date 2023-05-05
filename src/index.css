@@ -31,6 +31,12 @@ form button {
   font-family: "Poppins";
   cursor: pointer;
 }
+form button:hover {
+  background: #fff;
+  color: #12bca2;
+  border: 1px solid #12bca2;
+  border-radius: 6px;
+}
 
 .error{
   color: red;
